@@ -104,6 +104,9 @@ img {
     }
     section {
         padding: 2.5rem;
+        
     }
-    
+    .button {
+        margin: 2rem 0 0 0;
+    }
 }
