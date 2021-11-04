@@ -14,7 +14,12 @@ html {
     box-sizing: border-box;
     font-size: 18px;
 }
-body {background-color: var(--transparent-white);}
+body {background-color: var(--transparent-white); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 97vh;
+}
 
 main {
     display: flex;
@@ -22,10 +27,7 @@ main {
     width: 40rem;
     border-radius: 0.5rem;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 h1 {
@@ -81,3 +83,27 @@ img {
 .button-1 {color: var(--bright-orange);}
 .button-2 {color: var(--dark-cyan);}
 .button-3 {color: var(--very-dark-cyan);}
+
+@media only screen and (max-width: 750px) {
+    html {font-size: 12px;}
+}
+@media only screen and (max-width: 500px) {
+    html {font-size: 10px;}
+}
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 15px;
+    }
+    body {
+        padding: 1rem;
+        height: 100%;
+    }
+    main {
+        flex-direction: column;
+        max-width: 25rem;
+    }
+    section {
+        padding: 2.5rem;
+    }
+    
+}
